@@ -20,9 +20,9 @@ node {
   
     stage('deploy') {
       def resourceGroup = 'Quickstartinfjenkins-rg'
-      def webAppName = 'agwebapp'
+      def webAppName = 'mywebapppppp'
       // login Azure
-      withCredentials([usernamePassword(credentialsId: 'AzureServicePrincipal', passwordVariable: 'qwd.mF~71jRC.N9QsooSE64.J3Hn-WpX2U', usernameVariable: '7d8e2ff6-2f0f-4080-98f0-f4afff781940')]) {
+      withCredentials([usernamePassword(credentialsId: 'AzureServicePrincipal', passwordVariable: 'd~fmvTRlP~n_i1xi2GosZwH2Wi708JV~4P', usernameVariable: '03457a0a-e707-4ce4-b4e2-2e071baa7583')]) {
        sh '''
           az login --service-principal -u $AZURE_CLIENT_ID -p $AZURE_CLIENT_SECRET -t $AZURE_TENANT_ID
           az account set -s $AZURE_SUBSCRIPTION_ID
