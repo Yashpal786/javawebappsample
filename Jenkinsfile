@@ -19,7 +19,7 @@ node {
     }
   
     stage('deploy') {
-      def resourceGroup = 'Quickstartinfjenkins-rg'
+      def resourceGroup = 'Quickstartjenkins-rg'
       def webAppName = 'mywebapppppp'
       // login Azure
       withCredentials([usernamePassword(credentialsId: 'AzureServicePrincipal', passwordVariable: 'd~fmvTRlP~n_i1xi2GosZwH2Wi708JV~4P', usernameVariable: '03457a0a-e707-4ce4-b4e2-2e071baa7583')]) {
